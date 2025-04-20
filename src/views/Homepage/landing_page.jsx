@@ -3,7 +3,7 @@ import Navbar from '../../components/navbar'
 import { Badge } from '../../components/ui/badge'
 import { Button } from '../../components/ui/button'
 import { Card } from '../../components/ui/card'
-import { Sparkles } from 'lucide-react'
+import { Sparkles, Users } from 'lucide-react'
 
 const Landing_page = () => {
   return (
@@ -33,7 +33,7 @@ const Landing_page = () => {
         </section>
         <section className='bg-[#02231e] text-white p-8 flex flex-col'>
           <div className='flex flex-col justify-center items-center w-full'>
-            <h1 className='text-6xl font-bold'>
+            <h1 className='text-5xl font-bold'>
               How SkillTrail Works
             </h1>
             <h3 className='text-xl my-4 text-decoration-color: var(--color-gray-100)'>
@@ -51,6 +51,40 @@ const Landing_page = () => {
 
             </Card>
           </div>
+
+        </section>
+        <section className='bg-[#293f3c] text-white p-8 flex flex-col'>
+          <div className='flex flex-row justify-between gap-x-20 py-20 px-20'>
+            <div>
+              <Card className='border w-90 h-60 bg-transparent'>
+
+              </Card>
+            </div>
+            <div className=''>
+              <Badge className='bg-green-700 text-black' >
+                <Users />
+                Join 10,000+ Learners
+              </Badge>
+              <h2 className='text-5xl font-bold'>Discover Popular Learning Paths</h2>
+              <h3 className='text-wrap text-xl my-4 text-decoration-color: var(--color-gray-100)'>
+                Browse through our collection of community-created learning paths. Find the perfect path for your learning goals or create your own.
+              </h3>
+              <div className='flex gap-4 '>
+                <Badge className='bg-[#7a7777] text-white ' >
+                  Web Development</Badge>
+                <Badge className='bg-[#7a7777] text-white' >
+                  Data Science</Badge>
+                <Badge className='bg-[#7a7777] text-white' >
+                  UI/UX Design</Badge>
+                <Badge className='bg-[#7a7777] text-white' >
+                  Machine Learning</Badge>
+              </div>
+              <Button className='mt-10'>
+                Explore All Paths
+              </Button>
+            </div>
+          </div>
+
 
         </section>
       </main>
