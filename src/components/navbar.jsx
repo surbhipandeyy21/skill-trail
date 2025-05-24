@@ -13,13 +13,13 @@ const Navbar = ({ data }) => {
             <div className='flex '>
                 <ul className='flex gap-8 items-center'>
                     <li>
-                        <a href='#'>
+                        <a href='/login'>
                             <h1 className="text-lg font-medium text-white">Login</h1>
                         </a>
 
                     </li>
                     <li className='bg-[#39ac6d] p-2 rounded-md'>
-                        <a href='#' >
+                        <a href='/signup' >
                             <h1 className="text-lg font-medium text-white">Sign Up</h1>
 
                         </a>
